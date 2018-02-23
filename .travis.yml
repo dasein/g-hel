@@ -1,0 +1,12 @@
+sudo: true
+
+dist: trusty
+
+jobs:
+  include:
+    - stage: Build
+      script:
+      - make build
+    - stage: Test
+      script:
+      - make test
