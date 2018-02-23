@@ -1,6 +1,6 @@
 FROM gliderlabs/alpine:3.6
 
-RUN apk add --no-cache git bash fortune
+RUN apk add --no-cache git bash curl fortune
 
 RUN mkdir /test \
     && cd /test \

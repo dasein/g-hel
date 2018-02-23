@@ -18,7 +18,7 @@ dev: build
 export: build
 	docker rm g-hel.${VERSION} || :
 	docker create --name g-hel.${VERSION} g-hel:${VERSION} /bin/true
-	docker export g-hel.${VERSION} | gzip > g-hel.${VERSION}.tar.gz
+	docker export g-hel.${VERSION} | gzip > g-hel.tar.gz
 
 version:
 	@echo ${VERSION}
